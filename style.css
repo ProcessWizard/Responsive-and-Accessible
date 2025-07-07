@@ -1,0 +1,133 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+#hero {
+  background: url('Company-pictures/hero-images.png') center/cover no-repeat;
+  background-size: 500px auto;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: blueviolet;
+  text-shadow: #333;
+}
+
+#hero .cta {
+  background: blue;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+ }
+
+
+#about {
+  padding: 4rem 0;
+}
+
+#about p {
+  max-width: 700px;
+  margin-top: 1rem;
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-item {
+  text-align: center;
+}
+
+.service-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+ }
+
+
+#contact {
+  padding: 4rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+
+footer {
+  background: #222;
+  color: #ddd;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+address a {
+  color: #ddd;
+  text-decoration: none;
+}

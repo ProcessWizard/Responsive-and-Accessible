@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible Design Company</title>
+</head>
+
+<body>
+
+    <section id="hero" aria-label="Welcome section">
+        <div class="container">
+            <h1>Accessible Design Co</h1>
+            <button class="cta">Get Started</button>
+        </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+        <div class="container">
+            <h2 id="about-heading">About Us</h2>
+            <p>Our mission is to innovate with every project.</p>
+        </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+        <div class="container">
+            <h2 id="services-heading">Our Services</h2>
+            <div class="services-grid">
+
+                <article class="service-item">
+                    <img src="Company-pictures/Design-Co.jfif" alt="" aria-hidden="true" />
+                    <h3>Design</h3>
+                    <p>Brand Sensitivity.</p>
+                </article>
+
+                <article class="service-item">
+                    <img src="Company-pictures/Web-Design.png" alt="" aria-hidden="true" />
+                    <h3>Development</h3>
+                    <p>Delivering robust and scalable web and mobile applications designed to thrive.</p>
+                </article>
+
+                <article class="service-item">
+                    <img src="Company-pictures/Expert.jfif" alt="" aria-hidden="true" />
+                    <h3>Marketing</h3>
+                    <p>We will find and grow your audience.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form action="#" method="post" novalidate>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true" />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Accessible Design Company. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+            <address>
+                123 Tuesday St, Detroit, MI<br />
+                <a href="mailto:info@example.com">info@example.com</a><br />
+                <a href="tel:+1234567890">+1 (313) 777-9311</a>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
